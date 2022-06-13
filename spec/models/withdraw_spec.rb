@@ -63,5 +63,5 @@ RSpec.describe Withdraw, type: :model do
   it { is_expected.to validate_presence_of(:gross_amount) }
   it { is_expected.to validate_presence_of(:net_amount) }
   it { is_expected.to validate_presence_of(:receivable_currency_amount) }
-  it { is_expected.to define_enum_for(:status).with_values %w[created confirmation paying paid canceled] }
+  it { is_expected.to define_enum_for(:status).with_values %w[confirmation created paying paid canceled] }
 end

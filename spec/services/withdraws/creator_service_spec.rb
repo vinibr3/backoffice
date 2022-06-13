@@ -38,7 +38,7 @@ RSpec.describe Withdraws::CreatorService, type: :service do
                                        .out
                                        .where(financial_reason: FinancialReason.withdraw,
                                               currency: currency)
-                                       .sum(&:user_amount) }.by(-gross_amount)
+                                       .sum(&:user_amount).round(7) }.by(-gross_amount.round(7))
   end
 
   context 'when gross_amount less than minimum_amount' do
