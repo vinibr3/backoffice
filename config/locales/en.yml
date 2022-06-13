@@ -1,0 +1,26 @@
+en:
+  hello: "Hello world"
+  attributes:
+    email: Email
+    reset_password_url: Reset password url
+    sponsor_token: Sponsor token
+  errors:
+    messages:
+      invalid: Invalid
+    create_gateway_invoice: 'Error on create payment transaction: %{error}.'
+  password_mailer:
+    new:
+      subject: Password Reset
+      title: 'Click on the link below to reset your password.'
+  registration_mailer:
+    confirm:
+      subject: Register Confirmation
+      title: 'Click on the link below to confirm your register.'
+    new:
+      subject: "Welcome to %{company_name}!"
+      title: "It is awesome have you here."
+      sponsor_token: "Your affiliate token is <b>%{sponsor_token}</b>. Give it to your affiliates for register themself."
+  withdraw_mailer:
+    confirmation:
+      subject: 'Withdraw Confirmation'
+      title: 'Click on the link below to confirm your withdraw.'

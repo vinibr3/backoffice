@@ -1,0 +1,9 @@
+---
+:concurrency: 5
+staging:
+  :concurrency: <%= ENV['SIDEKIQ_CONCURRENCY'] || 10 %>
+production:
+  :concurrency: <%= ENV['SIDEKIQ_CONCURRENCY'] || 10 %>
+:queues:
+  - default
+  - mailers

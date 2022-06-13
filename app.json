@@ -1,0 +1,11 @@
+{
+ "name": "backoffice",
+ "description": "postdeploy scripts",
+ "scripts": {
+   "dokku": {
+     "postdeploy": "bundle exec rake db:migrate &&
+                    rails bonus_commissions:populate_direct_indication &&
+                    rails bonus_commissions:populate_indirect_indication"
+   }
+ }
+}
