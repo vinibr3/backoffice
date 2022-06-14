@@ -5,20 +5,30 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+Ruby version
 
-* System dependencies
+2.7.5
 
-* Configuration
+Configuration
 
-* Database creation
+masterkey '6567481aabf27ba2419ef8c21cf5ad2d'
 
-* Database initialization
+Database creation
 
-* How to run the test suite
+rails db:create
 
-* Services (job queues, cache servers, search engines, etc.)
+Database initialization
 
-* Deployment instructions
+rails db:migrate
 
-* ...
+How to run the test suite
+
+rspec spec
+
+Services (job queues, cache servers, search engines, etc.)
+
+Install redis on redis://localhost:6379/1 or assign REDIS_URL environment variable
+
+Deploy
+
+Assign environment variable DATABASE_URL
